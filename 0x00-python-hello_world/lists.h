@@ -4,22 +4,22 @@
 #include <stdlib.h>
 
 /**
- * struct listin_s - singly linked list
- * @in: integer
+ * struct listint_s - singly linked list
+ * @n: integer
  * @next: point to the next node
  *
- * Desc: singly linked list node struct
+ * Description: singly linked list node struct
  * for Holterton project
  */
-typedef struct listin_s
+typedef struct listint_s
 {
-	int in;
-	struct listin_s *next;
-} listin_t;
+	int n;
+	struct listint_s *next;
+} listint_t;
 
-size_t print_listin(const listin_t *h);
-listin_t *add_nodein(listin_t **head, const int in);
-void free_listin(listin_t *head);
-int check_cycle(listin_t *list);
+size_t print_listint(const listint_t *h);
+listint_t *add_nodeint(listint_t **head, const int n);
+void free_listint(listint_t *head);
+int check_cycle(listint_t *list);
 
 #endif
